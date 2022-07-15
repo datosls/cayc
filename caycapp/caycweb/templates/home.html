@@ -1,0 +1,189 @@
+{% load static from static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the official website of RCCG Christ Ambassadors Youth Church, Youth Province 10" />
+    <title>RCCG Christ Ambassadors Youth Church</title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/rccgcayclogo.png'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--- Navbar Section --> 
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt="Cayc logo"></a>
+            <div class="navbar_toogle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="{% url 'home' %}" class="navbar_links" id="active" >Home</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">About</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="missionandvision">Mission and Vision</a></li>
+                            <li><a href="housefellow">House Fellowship</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar_item">
+                    <a href="onlinegiving" class="navbar_links">Online Giving</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="mediaresources" class="navbar_links">Media Resources</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">Quick Links</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="testimony">Testimony</a></li>
+                            <li><a href="altarcall">Salvation Call</a></li>
+                            <li><a href="firsttimer">First Timer</a></li>
+                            <li><a href="youthdiary">Youth Diary</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- Hero Section --> 
+    <section class="hero">
+    </section>
+
+    <!--- Services Section -->
+    <div class="services">
+        <div class="services_container">
+            <div class="services_card">
+                <h1>Online Giving</h1>
+                <p>Click on Pay now to pay in your Tithe, Offerings and other forms of giving.</p>
+                <a href="onlinegiving">Pay Now</a>
+            </div>
+            <div class="services_card">
+                <h1>Upcoming Events & Announcement</h1>
+                <p>See Christ Ambassadors upcoming events, announcement and media resources, click the button below</p>
+                <a href="mediaresources">Click Here</a>
+            </div>
+            <div class="services_card">
+                <h1>Testimony</h1>
+                <p>To share the testimony of what God did for you, kindly share now so it can be added to the Online Testimonies.</p>
+                <a href="testimony">Share Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!--- House Fellowship Section -->
+    <div class="fellow">
+        <div class="fellow_container">
+            <h1>Ready to join any House fellowship?</h1>
+            <p>You can view and join any house fellowship program nearest to you and you will be bless in Jesus name.</p>
+            <a href="housefellow">Join House Fellowship</a>
+        </div>
+    </div>
+
+    <!--- believer Section --> 
+    <div class="believer">
+        <div class="believer_container">
+            <div class="believer_col">
+                <h1>First Timer</h1>
+                <p>Ready to come to Christ Ambassadors  Youth Church? We are very excited and pleased to receive you as Christ  wants everyone to come into His presence. And guess what? Your life will never remain the same.</p>
+                <a href="firsttimer">First timer</a>
+            </div>
+            <div class="believer_col_2">
+                <h1>New Believer</h1>
+                <p>Did you acknowledge all your sins, confessed them, asked for forgiveness, repented of those sin and forsook all your old way? Then the new believers class is for you. Kindly click the button and our Counsellors, Pastors & Ministers will love to pray with you and guide you.</p>
+                <a href="altarcall">New believer</a>
+            </div>
+        </div>
+    </div>
+
+    <!--- weekly Section --> 
+    <div class="weekly">
+        <h1>OUR WEEKLY ACTIVITIES</h1>
+        <div class="weekly_container">
+            <div class="weekly_card">
+                <h2>SUNDAY</h2>
+                <p>Sunday School - 7:45am - 8:30am</p>
+                <p>Sunday Service - 8:30am - 11:00am</p>
+                <p>House Fellowship - 5:00pm - 6:00pm</p>
+            </div>
+            <div class="weekly_card">
+                <h2>WEDNESDAY</h2>
+                <p>Heart 2 Heart - 5:30pm - 7:00pm</p>
+            </div>
+            <div class="weekly_card">
+                <h2>FRIDAY</h2>
+                <p>Impartation Service - 5:30pm -7:00pm</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- book Section --> 
+    <div class="book">
+        <h1>BOOK OF THE MONTH</h1>
+        <div class="book_container">
+            <p>This is an enlightening, inspiring, and practical guide for gaining control of your career and your life by ridding yourself of negative baggage, building positive attitudes, and then turning them into actions to help you achieve your dreams. In Attitude Is Everything, Keith Harrell shares the secrets that got him where he is today and provides you with a program for developing a healthier, happier, more productive attitude.</p>
+            <img src="{% static 'images/download(10).jpg'%}" alt="">
+            <div class="book_row_2">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="socials">
+        <div class="socials_container">
+            <h1>JOIN OUR STREAMING CHANNELS AND CONNECT WITH OUR SOCIAL MEDIA HANDLES</h1>
+            <div class="socials_icon">
+                <a href="https://m.facebook.com/rccgcayc" target="_blank"><img src="{% static 'images/Facebook.svg'%}" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCDu6naosx_oDU5VpYJEbYlw" target="_blank"><img src="{% static 'images/Youtube.svg'%}" alt=""></a>
+                <a href="https://www.instagram.com/rccgcayc" target="_blank"><img src="{% static 'images/Instagram.svg'%}" alt=""></a>
+                <a href="https://twitter.com/rccgcayc" target="_blank"><img src="{% static 'images/Twitter.svg'%}" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--- Contact Section -->
+    <div class="contact">
+        <div class="contact_container">
+            <h1>You can always talk to someone</h1>
+            <p>There are Spirit filled Counsellors, Pastors & Ministers willing to speak with you at any time, you will be bless in Jesus name.</p>
+            <button class="main_btn"><a href="contact">Contact Us</a></button>
+        </div>
+    </div>
+
+    <div class="iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.833939690667!2d7.045051714090284!3d4.798545542139119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cc5f1e868c13%3A0x1755b1b958d46e2c!2s183%20Peter%20Odili%20Rd%2C%20Abuloma%20500101%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1656456505720!5m2!1sen!2sng"  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt=""></a>
+            <p>© 2022 CHRIST AMBASSADOR YOUTH CHURCH. ALL RIGHTS RESERVED.</p>
+            <div class="footer_links">
+                <a href="missionandvision">ABOUT</a>
+                <a href="onlinegiving">ONLINE GIVING</a>
+                <a href="mediaresources">MEDIA RESOURCES</a>
+                <a href="youthdiary">QUICK LINKS</a>
+            </div>
+            <div class="footer_socials">
+                <a href="https://m.facebook.com/rccgcayc" target="_blank"><img src="{% static 'images/Facebook.svg'%}" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCDu6naosx_oDU5VpYJEbYlw" target="_blank"><img src="{% static 'images/Youtube.svg'%}" alt=""></a>
+                <a href="https://www.instagram.com/rccgcayc" target="_blank"><img src="{% static 'images/Instagram.svg'%}" alt=""></a>
+                <a href="https://twitter.com/rccgcayc" target="_blank"><img src="{% static 'images/Twitter.svg'%}" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/home.js'%}"></script>
+</body>
+</html>

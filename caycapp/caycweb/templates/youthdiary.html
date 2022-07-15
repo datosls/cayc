@@ -1,0 +1,148 @@
+{% load static from static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You can read spirited messages here and also check out RCCG Open Heavens and topics of Sunday School.." />
+    <title>Youth Diary</title>
+    <link rel="stylesheet" href="{% static 'css/youthdiary.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/rccgcayclogo.png'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--- Navbar Section --> 
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt="Cayc logo"></a>
+            <div class="navbar_toogle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="{% url 'home' %}" class="navbar_links" >Home</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">About</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="missionandvision">Mission and Vision</a></li>
+                            <li><a href="housefellow">House Fellowship</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar_item">
+                    <a href="onlinegiving" class="navbar_links">Online Giving</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="mediaresources" class="navbar_links">Media Resources</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">Quick Links</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="testimony">Testimony</a></li>
+                            <li><a href="altarcall">Salvation Call</a></li>
+                            <li><a href="firsttimer">First Timer</a></li>
+                            <li><a href="youthdiary">Youth Diary</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- Hero Section --> 
+    <section class="hero">
+        <div>
+            <div class="hero_container">
+                <h1>Welcome to Christ Ambassadors' Youth Diary</h1>
+                <p>You can read various messages here and also check out RCCG Open Heavens and topics of Sunday School.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--- Rovex Section --> 
+    <div class="rovex">
+        <div class="rovex_container">
+            <div class="rovex_col">
+                <h1>Youth Diary</h1>
+                <p>Get insights on various inspirational topics and teachings directly from the table of Christ Ambassador Youth Church that could guide you and give you another instance on the way you see things. You can read various messages here, not just only read but also meditate on it.</p>
+            </div>
+            <div class="rovex_col">
+                <img src="{% static 'images/DSC_0625.JPG'%}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--- Rovex Section --> 
+    <div class="rovex">
+        <div class="rovex_container">
+            <div class="rovex_col">
+                <img src="{% static 'images/6.png'%}" alt="">
+            </div>
+            <div class="rovex_col">
+                <h1>Sunday School</h1>
+                <p>Every Sunday School is like a treasure thrown into a river. Each aspect of the structured lessons will be a life changing experience for you if you take them to heart.  It will be one of the best decisions that you will take in your life.  Don’t just depend on the classes that you attend for a few minutes every Sunday or on the day of the week which your Church chooses to study the manual but embark on deeper personal studies that you will enable you to understand the topics. </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--- Rovex Section --> 
+    <div class="rovex">
+        <div class="rovex_container">
+            <div class="rovex_col">
+                <h1>Open Heaven</h1>
+                <p>Open Heavens Daily Devotional Message is written by pastor e a Adeboye. The rccg devotion is a blessing to the world, with millions of readers around the world. Today, God is still doing marvelous deeds through the Redeemed Christian Church of God, worldwide. It is time to take concrete steps to move forward in justice.</p>
+            </div>
+            <div class="rovex_col">
+                <img src="{% static 'images/openHeavens1.jpg'%}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--- House Fellowship Section -->
+    <div class="fellow">
+        <div class="fellow_container">
+            <h1>Get Spiritual Guidancee</h1>
+            <p>You can read various messages here and also check out RCCG Open Heavens and topics of Sunday School.</p>
+        </div>
+    </div>
+
+    <!--- Post Section -->
+    <div class="post">
+        <div class="post_container">
+            <h1>Related Posts</h1>
+            <p>No post yet, but do care to check in later.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt=""></a>
+            <p>© 2022 CHRIST AMBASSADOR YOUTH CHURCH. ALL RIGHTS RESERVED.</p>
+            <div class="footer_links">
+                <a href="missionandvision">ABOUT</a>
+                <a href="onlinegiving">ONLINE GIVING</a>
+                <a href="mediaresources">MEDIA RESOURCES</a>
+                <a href="youthdiary">QUICK LINKS</a>
+            </div>
+            <div class="footer_socials">
+                <a href="https://m.facebook.com/rccgcayc" target="_blank"><img src="{% static 'images/Facebook.svg'%}" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCDu6naosx_oDU5VpYJEbYlw" target="_blank"><img src="{% static 'images/Youtube.svg'%}" alt=""></a>
+                <a href="https://www.instagram.com/rccgcayc" target="_blank"><img src="{% static 'images/Instagram.svg'%}" alt=""></a>
+                <a href="https://twitter.com/rccgcayc" target="_blank"><img src="{% static 'images/Twitter.svg'%}" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/home.js'%}"></script>
+</body>
+</html>

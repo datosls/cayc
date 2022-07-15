@@ -1,0 +1,140 @@
+{% load static from static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out the RCCG Mission and Vision Statement." />
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+    <link rel="shortcut icon" href="{% static 'images/rccgcayclogo.png'%}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--- Navbar Section --> 
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt="Cayc logo"></a>
+            <div class="navbar_toogle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="{% url 'home' %}" class="navbar_links" >Home</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">About</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="missionandvision">Mission and Vision</a></li>
+                            <li><a href="housefellow">House Fellowship</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar_item">
+                    <a href="onlinegiving" class="navbar_links">Online Giving</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="mediaresources" class="navbar_links">Media Resources</a>
+                </li>
+                <li class="navbar_item"><a href="#" class="navbar_links">Quick Links</a>
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="testimony">Testimony</a></li>
+                            <li><a href="altarcall">Salvation Call</a></li>
+                            <li><a href="firsttimer">First Timer</a></li>
+                            <li><a href="youthdiary">Youth Diary</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- Contact Section -->
+    <div class="contact">
+        <div class="contact_container">
+            <div class="contact_col">
+                <p>We always want to hear you. For any enquires or information, don't fail to contact us.</p>
+                <div class="contact_bloc">
+                    <img src="{% static 'images/Iconly-Bold-Location.svg'%}" alt="">
+                    <p>No. 183 Peter Odili Road, Port Harcourt, Rivers State.</p>
+                </div>
+                <div class="contact_bloc">
+                    <img src="{% static 'images/Iconly-Bold-Call.svg'%}" alt="">
+                    <a href="tel:+234-0000000000">+2340000000000</a>
+                </div>
+                <div class="contact_bloc">
+                    <img src="{% static 'images/Iconly-Bold-Message.svg'%}" alt="">
+                    <a href="mailto:christambassadorsyc@gmail.com?subject=Subject">christambassadorsyc@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact_col_2">
+                <h1>Contact Us</h1>
+                <form>
+                    <div class="form">
+                        <div class="middle-form">
+                            <div class="label">Name</div>
+                            <input type="text">
+                        </div>
+                        <div class="middle-form">
+                            <div class="label">Phone Number</div>
+                            <input type="text">
+                        </div>
+                        <div class="middle-form">
+                            <div class="label">Email</div>
+                            <input type="email">
+                        </div>
+                        <div class="middle-form">
+                            <div class="label">Subject</div>
+                            <input type="text">
+                        </div>
+                        <div class="bottom-form">
+                            <div class="inner-form">
+                                <div class="label">Message</div>
+                                <textarea ></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_container">
+            <a href="{% url 'home' %}"><img src="{% static 'images/rccgcayclogo.png'%}" alt=""></a>
+            <p>© 2022 CHRIST AMBASSADOR YOUTH CHURCH. ALL RIGHTS RESERVED.</p>
+            <div class="footer_links">
+                <a href="missionandvision">ABOUT</a>
+                <a href="onlinegiving">ONLINE GIVING</a>
+                <a href="mediaresources">MEDIA RESOURCES</a>
+                <a href="youthdiary">QUICK LINKS</a>
+            </div>
+            <div class="footer_socials">
+                <a href="https://m.facebook.com/rccgcayc" target="_blank"><img src="{% static 'images/Facebook.svg'%}" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCDu6naosx_oDU5VpYJEbYlw" target="_blank"><img src="{% static 'images/Youtube.svg'%}" alt=""></a>
+                <a href="https://www.instagram.com/rccgcayc" target="_blank"><img src="{% static 'images/Instagram.svg'%}" alt=""></a>
+                <a href="https://twitter.com/rccgcayc" target="_blank"><img src="{% static 'images/Twitter.svg'%}" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/contact.js'%}"></script>
+    <script type="text/javascript">
+        if (confirm("Hello! Are you a first tmer?")) {
+            window.location.href = "firsttimer";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+    </script>
+</body>
+</html>
