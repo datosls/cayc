@@ -12,4 +12,6 @@ urlpatterns = [ path('', views.home, name='home'),
                 path('altarcall', views.altarcall, name='altarcall'),
                 path('onlinegiving', views.onlinegiving, name='onlinegiving'),
                 path('contact', views.contact, name='contact'),
+                path('success', views.success, name='success'),
+
 ] 
