@@ -42,3 +42,10 @@ def onlinegiving(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def success(request):
+    return render(request, 'success.html')
+
+
+def handlenotfound(request,exception):
+    return render(request, '404.html')
