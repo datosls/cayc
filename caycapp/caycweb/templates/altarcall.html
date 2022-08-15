@@ -70,25 +70,25 @@
     <!--- Contact Section -->
     <div class="contact">
         <div class="contact_container">
-            <form>
+            <form action="https://sheetdb.io/api/v1/xool30983ou2q" method="post" id="sheetdb-form">
                 <div class="contact_bloc">
                     <p>Altar Call Response</p>
                     <h1>Altar Call</h1>
                     <div class="middle-form">
                         <div class="label">Full Name</div>
-                        <input type="text">
+                        <input name="data[Full Name]" type="text">
                     </div>
                     <div class="middle-form">
                         <div class="label">Email</div>
-                        <input type="email">
+                        <input name="data[Email]" type="email">
                     </div>
                     <div class="middle-form">
                         <div class="label">Phone Number</div>
-                        <input type="text">
+                        <input name="data[Phone Number]" type="text">
                     </div>
                     <div class="middle-form">
                         <div class="label">Sex</div>
-                        <select>
+                        <select name="data[Sex]">
                             <option value="none"> Choose option </option>
                             <option value="Male"> Male </option>
                             <option value="Female"> Female </option>
@@ -96,16 +96,16 @@
                     </div>
                     <div class="middle-form">
                         <div class="label">Address</div>
-                        <input type="text">
+                        <input name="data[Address]" type="text">
                     </div>
                     
                     <div class="middle-form">
                         <div class="label">Closest Landmark</div>
-                        <input type="text">
+                        <input name="data[Closest Landmark]" type="text">
                     </div>
                     <div class="bottom-form">
                         <div class="label">Prayer Request</div>
-                        <textarea ></textarea>
+                        <textarea name="data[Prayer Request]"></textarea>
                     </div>
                     <button type="submit" class="btn">Submit</button>
                 </div>
@@ -144,5 +144,21 @@
     </div>
     
     <script src="{% static 'js/home.js'%}"></script>
+    <script>
+        var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        window.location.href = "success";
+
+      });
+    });
+    </script>
 </body>
 </html>
